@@ -22,16 +22,16 @@ void main()
    }
    else
    {
-   	printf("\n Do U want to enter the details of file\n");
+   	printf("\n Do U want to enter the details of book\n");
       scanf(" %c",&ch);
-      if( ch=='y' || ch=='Y')
+      while( ch=='y' || ch=='Y')
       {
          fflush(stdin);
       	printf("\n Enter the book name,price and quantiy\n");
          scanf("%s %f %d",b.bkname,&b.price,&b.qty);
          fprintf(fptr,"%s %f %d",b.bkname,b.price,b.qty);
          fflush(stdin);
-         printf("\n Do u wish to store another book(Y\N) \n");
+         printf("\n Do u wish to store another book(Y/N) \n");
          scanf(" %s",&ch);
       }
       fclose(fptr);
