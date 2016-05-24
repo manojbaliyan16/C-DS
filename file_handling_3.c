@@ -1,4 +1,8 @@
-// Record I/O in files
+// Formatted I/O with files(records)
+// two disadvantages of fscanf and fprintf:
+// book name(bkname) is read as single word.
+// Storage of numbers takes more space when file is opened in text mode.
+
 
 #include<stdio.h>
 #include<conio.h>
