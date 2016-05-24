@@ -8,9 +8,9 @@
 void main()
 {
     typedef struct {
-  					char bkname[20];
-    				float price;
-               int qty;
+  		char bkname[20];
+    		float price;
+                int qty;
             	}book;
    book b;
    int size=sizeof(book);
@@ -25,16 +25,16 @@ void main()
    }
    else
    {
-   	printf("\n Do U want to enter the details of book?\n");
+      printf("\n Do U want to enter the details of book?\n");
       scanf(" %c",&ch);
       while( ch=='y' || ch=='Y')
       {
          fflush(stdin);
-      	printf("\n Enter the book name\n");
+      	 printf("\n Enter the book name\n");
          scanf("%[^\n]s", b.bkname);
          printf("\n Enter the book price and Quantity\n");
          scanf("%f %d",&b.price,&b.qty);
-			fwrite(&b,size,1,fptr);
+	 fwrite(&b,size,1,fptr);
          fflush(stdin);
          printf("\n Do u wish to store another book(Y/N) \n");
          scanf(" %s",&ch);
