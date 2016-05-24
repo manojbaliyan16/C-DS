@@ -41,7 +41,7 @@ void main()
       printf("\n Contents of the record are:-\n");
       while( (fscanf(fptr,"%s %f %d",b.bkname,&b.price,&b.qty)) !=EOF)
       {
-      	printf("%40s %8.2f %8d",b.bkname,b.price,b.qty);
+      	printf("\n %40s %8.2f %8d",b.bkname,b.price,b.qty);
       }
       fclose(fptr);
 
