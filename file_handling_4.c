@@ -50,7 +50,6 @@ void main()
       	printf("%25s\t\t%8.2f %8d\n",b.bkname,b.price,b.qty);
       }
       fclose(fptr);
-
    }
    getch();
 }
