@@ -13,7 +13,7 @@ void main()
    book b;
    char ch,filename[20];
    FILE *fptr;
-   printf("\n Enter the file name where u want to store details\n");
+   printf("\n Enter the file name where u want to store details.\n");
    gets(filename);
    fptr=fopen(filename,"w");
    if(!fptr)
@@ -22,12 +22,12 @@ void main()
    }
    else
    {
-   	printf("\n Do U want to enter the details of book\n");
+   	printf("\n Do U want to enter the details of book?\n");
       scanf(" %c",&ch);
       while( ch=='y' || ch=='Y')
       {
          fflush(stdin);
-      	printf("\n Enter the book name,price and quantiy\n");
+      	printf("\n Enter the book name,price and quantiy.\n");
          scanf("%s %f %d",b.bkname,&b.price,&b.qty);
          fprintf(fptr,"%s %f %d",b.bkname,b.price,b.qty);
          fflush(stdin);
